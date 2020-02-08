@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.64.0 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="xiaowenwen">
+<meta name="keywords" content="">
+<meta name="description" content="对于那些想搭建自己的博客，又只想简单专注写markdown，注重博客内容质量的童鞋，推荐一个神器——Hugo。">
+
+
+<meta property="og:description" content="对于那些想搭建自己的博客，又只想简单专注写markdown，注重博客内容质量的童鞋，推荐一个神器——Hugo。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用hugo快速搭建自己的静态博客">
+<meta name="twitter:title" content="用hugo快速搭建自己的静态博客">
+<meta property="og:url" content="https://xiaowenwen1995.github.io/2020/02/%E7%94%A8hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
+<meta property="twitter:url" content="https://xiaowenwen1995.github.io/2020/02/%E7%94%A8hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
+<meta property="og:site_name" content="xiaowenwen&#39;s blog">
+<meta property="og:description" content="对于那些想搭建自己的博客，又只想简单专注写markdown，注重博客内容质量的童鞋，推荐一个神器——Hugo。">
+<meta name="twitter:description" content="对于那些想搭建自己的博客，又只想简单专注写markdown，注重博客内容质量的童鞋，推荐一个神器——Hugo。">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2020-02-08T15:23:40">
+  
+  
+    <meta property="article:modified_time" content="2020-02-08T15:23:40">
+  
+  
+  
+    
+      <meta property="article:section" content="技术相关">
+    
+  
+  
+    
+      <meta property="article:tag" content="hugo">
+    
+      <meta property="article:tag" content="博客">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://xiaowenwen1995.github.io/img/hugo.png">
+  <meta property="twitter:image" content="https://xiaowenwen1995.github.io/img/hugo.png">
+
+
+
+
+
+  <meta property="og:image" content="https://xiaowenwen1995.github.io/avatar.jpg">
+  <meta property="twitter:image" content="https://xiaowenwen1995.github.io/avatar.jpg">
+
+
+    <title>用hugo快速搭建自己的静态博客</title>
+
+    <link rel="icon" href="https://xiaowenwen1995.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://xiaowenwen1995.github.io/2020/02/%E7%94%A8hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://xiaowenwen1995.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://xiaowenwen1995.github.io/">xiaowenwen&#39;s blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://xiaowenwen1995.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://xiaowenwen1995.github.io/avatar.jpg" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://xiaowenwen1995.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://xiaowenwen1995.github.io/avatar.jpg" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">xiaowenwen</h4>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xiaowenwen1995.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xiaowenwen1995.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xiaowenwen1995.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xiaowenwen1995.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://xiaowenwen1995.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kakawait" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      用hugo快速搭建自己的静态博客
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-02-08T15:23:40&#43;08:00">
+        
+  二月 8, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="https://xiaowenwen1995.github.io/categories/%e6%8a%80%e6%9c%af%e7%9b%b8%e5%85%b3">技术相关</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>对于那些想搭建自己的博客，又只想简单专注写markdown，注重博客内容质量的童鞋，推荐一个神器——<strong>Hugo</strong>。</p>
+<h1 id="hugo">Hugo</h1>
+<hr>
+<p>Hugo是一款开源的用go语言编写的静态网站生成工具。</p>
+<ul>
+<li>项目地址：<a href="http://gohugo.io/">http://gohugo.io/</a></li>
+<li>GitHub：<a href="https://github.com/gohugoio/hugo">https://github.com/gohugoio/hugo</a></li>
+<li>下载地址：<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></li>
+<li>网站模板：<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></li>
+</ul>
+<p><img src="https://xiaowenwen1995.github.io/img/hugo.png" alt="hugo"></p>
+<h1 id="使用hugo">使用Hugo</h1>
+<hr>
+<h3 id="创建新站点">创建新站点</h3>
+<pre><code>hugo new site mysitename
+</code></pre>
+<p>该命令将会生成一个名为mysitename的文件夹，文件夹中的目录结构如下：</p>
+<pre><code>▸ archetypes/  
+▸ content/  
+▸ data/  
+▸ layouts/  
+▸ static/  
+▸ themes/   
+  config.toml  
+</code></pre>
+<p>content中放置自己写的markdown，static放置一些需要引用的图片等资源，themes放置网页模板文件，config.toml是hugo网站的配置文件。</p>
+<h3 id="创建新页面">创建新页面</h3>
+<p>进入mysitename，创建一个页面：</p>
+<pre><code>cd mysitename  
+hugo new new.md 
+</code></pre>
+<p>如果是博客文件，可以创建在content的post目录下：</p>
+<pre><code>hugo new post/new.md 
+</code></pre>
+<p>打开new.md，将会看到：</p>
+<pre><code>---
+title: &quot;New&quot;
+date: 2017-11-30T11:05:09+08:00
+draft: true
+--- 
+</code></pre>
+<p>然后你就可以在后面写自己的markdown文章啦~</p>
+<h3 id="下载模板文件">下载模板文件</h3>
+<p>可以从网站模板<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>中挑选你自己喜欢的网站风格，这里我选的是hugo-tranquilpeak-theme</p>
+<p>切换到themes目录下：</p>
+<pre><code>cd themes
+git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
+</code></pre>
+<p><img src="https://xiaowenwen1995.github.io/img/showcase.png" alt="hugo-tranquilpeak-theme"></p>
+<h3 id="本地调试">本地调试</h3>
+<pre><code>hugo server --theme=hugo-tranquilpeak-theme --buildDrafts --watch
+</code></pre>
+<p>然后就可以在浏览器中输入<a href="http://127.0.0.1:1313">http://127.0.0.1:1313</a>欣赏自己的网站啦~</p>
+<h3 id="远程发布">远程发布</h3>
+<p>当你想上传至自己的服务器上，或者github上，就可以使用以下的命令生成静态网站文件</p>
+<pre><code>hugo --theme=hugo-tranquilpeak-theme --baseUrl=&quot;http://yourname.github.io/&quot; --buildDrafts 
+</code></pre>
+<p>这时会在网站目录下多生成一个public目录，其中就是生成的静态网站文件，直接放入服务器网站目录下，或者push到自己的GitHub上就可以啦~</p>
+<h3 id="修改网站模板">修改网站模板</h3>
+<p>网站模板中的一些信息，可以直接通过config.toml配置，具体的配置方式，请查看各自的模板的说明文档，么么哒~</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://xiaowenwen1995.github.io/tags/hugo/">hugo</a>
+
+  <a class="tag tag--primary tag--small" href="https://xiaowenwen1995.github.io/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 xiaowenwen. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://xiaowenwen1995.github.io/avatar.jpg" alt="作者的图片" />
+    
+    <h4 id="about-card-name">xiaowenwen</h4>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Student
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Chongqing
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://xiaowenwen1995.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://xiaowenwen1995.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+
+
+
+
+    
+  </body>
+</html>
+

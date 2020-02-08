@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on xiaowenwen&#39;s blog</title>
+    <link>https://xiaowenwen1995.github.io/post/</link>
+    <description>Recent content in Posts on xiaowenwen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Feb 2020 15:23:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://xiaowenwen1995.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用hugo快速搭建自己的静态博客</title>
+      <link>https://xiaowenwen1995.github.io/2020/02/%E7%94%A8hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 08 Feb 2020 15:23:40 +0800</pubDate>
+      
+      <guid>https://xiaowenwen1995.github.io/2020/02/%E7%94%A8hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;p&gt;对于那些想搭建自己的博客，又只想简单专注写markdown，注重博客内容质量的童鞋，推荐一个神器——&lt;strong&gt;Hugo&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
