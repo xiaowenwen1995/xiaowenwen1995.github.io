@@ -6,10 +6,19 @@
     <description>Recent content on xiaowenwen&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2020 15:23:40 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 16:26:38 +0800</lastBuildDate>
     
 	<atom:link href="https://xiaowenwen1995.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python中lambda的用法</title>
+      <link>https://xiaowenwen1995.github.io/2020/02/python%E4%B8%ADlambda%E7%9A%84%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Tue, 11 Feb 2020 16:26:38 +0800</pubDate>
+      
+      <guid>https://xiaowenwen1995.github.io/2020/02/python%E4%B8%ADlambda%E7%9A%84%E7%94%A8%E6%B3%95/</guid>
+      <description>&lt;p&gt;lambda表达式定义的函数为匿名函数，通常是在需要一个函数，但是又不想费神去命名一个函数的场合下使用。本文对Python中lambda表达式的特性和用法进行了一个简单的总结。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>用hugo快速搭建自己的静态博客</title>
