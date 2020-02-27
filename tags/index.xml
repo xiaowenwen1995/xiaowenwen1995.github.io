@@ -6,10 +6,46 @@
     <description>Recent content in Tags on xiaowenwen&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Feb 2020 22:39:12 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 13:55:44 +0800</lastBuildDate>
     
 	<atom:link href="https://xiaowenwen1995.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python</title>
+      <link>https://xiaowenwen1995.github.io/tags/python/</link>
+      <pubDate>Thu, 27 Feb 2020 13:55:44 +0800</pubDate>
+      
+      <guid>https://xiaowenwen1995.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scrapy</title>
+      <link>https://xiaowenwen1995.github.io/tags/scrapy/</link>
+      <pubDate>Thu, 27 Feb 2020 13:55:44 +0800</pubDate>
+      
+      <guid>https://xiaowenwen1995.github.io/tags/scrapy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>selenium</title>
+      <link>https://xiaowenwen1995.github.io/tags/selenium/</link>
+      <pubDate>Thu, 27 Feb 2020 13:55:44 +0800</pubDate>
+      
+      <guid>https://xiaowenwen1995.github.io/tags/selenium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>爬虫</title>
+      <link>https://xiaowenwen1995.github.io/tags/%E7%88%AC%E8%99%AB/</link>
+      <pubDate>Thu, 27 Feb 2020 13:55:44 +0800</pubDate>
+      
+      <guid>https://xiaowenwen1995.github.io/tags/%E7%88%AC%E8%99%AB/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>金融</title>
@@ -26,15 +62,6 @@
       <pubDate>Wed, 19 Feb 2020 22:39:12 +0800</pubDate>
       
       <guid>https://xiaowenwen1995.github.io/tags/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://xiaowenwen1995.github.io/tags/python/</link>
-      <pubDate>Wed, 12 Feb 2020 14:23:09 +0800</pubDate>
-      
-      <guid>https://xiaowenwen1995.github.io/tags/python/</guid>
       <description></description>
     </item>
     
